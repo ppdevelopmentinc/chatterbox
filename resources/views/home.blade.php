@@ -27,12 +27,6 @@
                 <div class="card-header">Friends</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
                     {{ Auth::user()->name }} (You)
                     All users to pull here
                 </div>
@@ -47,17 +41,21 @@
                 <div class="card-header">Recent Conversations</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
                     Person you spoke with last
                 </div>
             </div>
         </div>
     </div>
+
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div >
+                <a class="btn btn-info" href={{ route('home') }} >Open new Chat</a>
+            </div>
+        </div>
+    </div>
+    
 </div>
 @endsection
 
