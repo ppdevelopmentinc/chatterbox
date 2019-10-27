@@ -33,7 +33,8 @@
                         </div>
                     @endif
 
-                    {{ Auth::user()->name }}
+                    {{ Auth::user()->name }} (You)
+                    All users to pull here
                 </div>
             </div>
         </div>
