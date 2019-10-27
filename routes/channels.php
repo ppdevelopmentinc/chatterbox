@@ -14,3 +14,8 @@
 Broadcast::channel('App.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
+
+// Authorize that the currently authenticated user can actually listen on the channel
+Broadcast::channel('chat', function ($user) {
+  return Auth::check();
+});

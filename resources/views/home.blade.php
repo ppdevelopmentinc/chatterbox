@@ -51,7 +51,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div >
-                <a class="btn btn-info" href={{ route('home') }} >Open new Chat</a>
+                <a class="btn btn-info" href={{ route('chat') }} >Open new Chat</a>
             </div>
         </div>
     </div>
