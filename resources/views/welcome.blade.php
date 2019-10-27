@@ -36,8 +36,7 @@
                 </div>
 
                 <div class="links">
-                    <a href={{ route('home') }}>To Do</a>
-                    <a href={{ route('home') }}>TO Do</a>
+                    <a href={{ route('home') }}>Check your chats</a>
                 </div>
             </div>
         </div>
