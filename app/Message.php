@@ -12,6 +12,7 @@ class Message extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
+    protected $fillable = ['message'];
     public function user()
     {
         return $this->belongsTo(User::class);
